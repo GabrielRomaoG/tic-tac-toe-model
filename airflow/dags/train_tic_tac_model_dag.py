@@ -1,4 +1,3 @@
-import datetime
 import textwrap
 import pendulum
 from airflow import DAG
@@ -9,9 +8,10 @@ from src.machine_learning.build_model import TicTacToeModelBuilder
 
 with DAG(
     "train_tic_tac_model",
-    schedule=datetime.timedelta(days=1),
+    schedule="@daily",
     start_date=pendulum.datetime(day=1, month=1, year=2025, tz="UTC"),
     description="Train the Tic-tac-toe's machine learning model.",
+    doc_md=__doc__,
 ) as dag:
     process_dataset_task = PythonOperator(
         task_id="process_dataset",
