@@ -22,3 +22,13 @@ Install the dependencies in the requirements.txt and setup.py:
 pip install -r requirements.txt
 pip intall -e .
 ```
+
+Additional command for the airflow home path:
+```
+export AIRFLOW_HOME=$(pwd)/airflow/
+```
+
+Now you can run airflow in a local environment:
+```
+airflow standalone
+```
