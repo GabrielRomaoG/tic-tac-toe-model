@@ -10,6 +10,13 @@ class TicTacToeModelBuilder:
 
     @classmethod
     def build(cls):
+        """
+        Builds the machine learning model using the processed tic-tac-toe dataset,
+        trains it, and saves it to a file.
+
+        The model is a logistic regression with elastic net penalty and saga solver.
+        The hyperparameters are set to the best values found in the model selection process.
+        """
         processed_tic_tac_df = pd.read_csv(
             TicTacToeResultsProcessor.PROCESSED_DATASET_CSV_PATH
         )
