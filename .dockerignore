@@ -1,0 +1,8 @@
+.venv/
+.vscode/
+.env/
+.gitignore
+.python-version
+README.md
+__pycache__/
+*.pyc
