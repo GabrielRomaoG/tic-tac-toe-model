@@ -6,7 +6,7 @@ from src.etl.process_tic_tac_toe_results import TicTacToeResultsProcessor
 
 
 class TicTacToeModelBuilder:
-    MODEL_PATH = Path("src/machine_learning/tic_tac_model.z")
+    MODEL_PATH = Path("resources/tic_tac_model.z")
 
     @classmethod
     def build(cls):

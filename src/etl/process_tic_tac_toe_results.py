@@ -6,8 +6,8 @@ from imblearn.over_sampling import RandomOverSampler
 
 class TicTacToeResultsProcessor:
 
-    DATASET_CSV_PATH = Path("src/data/tic_tac_results.csv")
-    PROCESSED_DATASET_CSV_PATH = Path("src/data/processed_tic_tac_results.csv")
+    DATASET_CSV_PATH = Path("resources/tic_tac_results.csv")
+    PROCESSED_DATASET_CSV_PATH = Path("resources/processed_tic_tac_results.csv")
 
     @classmethod
     def process(cls) -> pd.DataFrame:
