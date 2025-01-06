@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]  
+
+[project]
+name = "tic-tac-toe_model"
+version = "1.0.0"
+description = "Machine learning model that predicts the outcome of Tic Tac Toe games"
+authors = [
+    { name = "Gabriel Romão", email = "gabriel-rgomes@hotmail.com" },
+]
+
+
