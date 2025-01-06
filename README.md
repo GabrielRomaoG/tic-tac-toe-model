@@ -7,6 +7,14 @@
 
 You can see the EDA of the dataset on src/machine_learning/eda.ipynb.
 
+## Project Structure
+
+The dag is available on airflow/dags.
+
+The scripts for etl is on src/elt.
+
+The machine learning code is on src/machine_learning.
+
 ## Setup
 
 For a faster setup, read the Docker setup section.
