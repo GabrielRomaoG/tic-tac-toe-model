@@ -17,6 +17,8 @@ The machine learning code is on src/machine_learning.
 
 ## Setup
 
+### Manually
+
 For a faster setup, read the Docker setup section.
 
 Create a virtual environment using the python version given by the .python-version file.
@@ -40,3 +42,18 @@ Now you can run airflow in a local environment:
 ```
 airflow standalone
 ```
+
+### Docker 
+
+execute these commands to build the container and run it:
+```
+docker build -t tic_tac_toe_model:v1 .
+docker run -it -p 8080:8080 tic_tac_toe_model:v1
+```
+
+### Accessing the web server
+
+After executing the run command, the airflow webserver will be available on the 
+port 8080 and the login access is going to be on the terminal.
+
+You can execute the dag train_tic_tac_model manually in there.
